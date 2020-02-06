@@ -1,2 +1,5 @@
 .gitignore
 node_modules
+keys.js
+.idea
+.env

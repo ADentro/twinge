@@ -2,22 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc58c1a-b376-4c10-99f4-2bf12a91894b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamChat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket-io-server/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/config/keys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/middlewares/requireLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/routes/authRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/services/passport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/services/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/sql/dbConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/sql/users/getUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/sql/users/insertUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/streams/StreamDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/streams/StreamDelete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtmpserver/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/rtmpserver/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GoogleAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GoogleAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/streams/StreamCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/streams/StreamCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/streams/StreamList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/streams/StreamList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/authReducer.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +56,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ORpA5hnHJ66jrldDoa2OHjXW7Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -62,15 +75,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -102,7 +115,17 @@
       <workItem from="1570770443390" duration="7216000" />
       <workItem from="1572034182607" duration="285000" />
       <workItem from="1572573360956" duration="1701000" />
-      <workItem from="1572658234804" duration="7904000" />
+      <workItem from="1572658234804" duration="8822000" />
+      <workItem from="1573369905299" duration="357000" />
+      <workItem from="1573880608312" duration="4000000" />
+      <workItem from="1574030616461" duration="8213000" />
+      <workItem from="1574135565854" duration="6085000" />
+      <workItem from="1575171998888" duration="1444000" />
+      <workItem from="1575504902851" duration="48576000" />
+      <workItem from="1579206187304" duration="1156000" />
+      <workItem from="1580239268211" duration="6070000" />
+      <workItem from="1580464513676" duration="28573000" />
+      <workItem from="1580966815609" duration="10226000" />
     </task>
     <servers />
   </component>
@@ -121,5 +144,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1303" y="198" key="DBNavigator.ProjectSettingsDialog" timestamp="1580359160966">
+      <screen x="-1680" y="23" width="1680" height="1027" />
+    </state>
+    <state x="-1303" y="198" key="DBNavigator.ProjectSettingsDialog/0.23.2560.1057/-1680.23.1680.1027@-1680.23.1680.1027" timestamp="1580359160966" />
+    <state x="1213" y="214" width="1328" height="758" key="dock-window-1" timestamp="1580969941323">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="1213" y="214" width="1328" height="758" key="dock-window-1/0.23.2560.1057/-1680.23.1680.1027@-1680.23.1680.1027" timestamp="1580969941323" />
   </component>
 </project>

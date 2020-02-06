@@ -1,8 +1,8 @@
+import axios from 'axios';
 import streams from '../apis/streams';
 import history from '../history';
 import {
-    SIGN_IN,
-    SIGN_OUT,
+    FETCH_USER,
     CREATE_STREAM,
     FETCH_STREAMS,
     FETCH_STREAM,
@@ -10,17 +10,9 @@ import {
     EDIT_STREAM
 } from './types';
 
-export const signIn = (userId) => {
-    return {
-        type: SIGN_IN,
-        payload: userId
-    };
-};
-
-export const signOut = () => {
-    return {
-        type: SIGN_OUT
-    };
+export const fetchUser = () => async dispatch => {
+    const res = await axios.get('/api/current_user');
+    dispatch({ type: FETCH_USER, payload: res.data });
 };
 
 export const createStream = formValues => async (dispatch, getState) => {
